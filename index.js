@@ -162,8 +162,17 @@ Use the game function below to do the following:
 */
 
 function game(user, computer){
-    Math.random()
+  const rps = 
+  Math.floor(Math.random() * 3);
+
+  const results = ['rock','paper','scissors'];
+
+  result = results[rps];
+
+    console.log(result);
 }
+
+game()
   
   
 

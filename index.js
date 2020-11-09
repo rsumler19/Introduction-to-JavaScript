@@ -17,6 +17,12 @@ Do the following:
 
    HINT: no function required
 */
+let votingAge = 35;
+ if (votingAge > 18) {
+  return(true)
+  }else {
+  return(false)
+  }   
 
 
 
@@ -30,7 +36,11 @@ Do the following:
 
    HINT: no function required
 */
-
+let x = 4;
+let y = 7;
+if (y < 8) {
+  return(x + 2);
+}
 
 
 
@@ -46,7 +56,9 @@ Do the following:
    HINT: look up the Number method
 */
 
-
+var x = "1999";
+var y = parseInt("1999")
+return(y);
 
 
 /*
@@ -58,9 +70,11 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-    /*add your code here*/
+function multiply(a * b) {
+  return(a * b);    
   }
+
+  multiply(4,6)
 
 
 
@@ -73,9 +87,9 @@ Do the following:
    2. Use the received value to calculate the age in dog years (1 human year is equal to 7 dog years)
    3. Return the newly calculated age
 */
-
-function dogYears(/*add your code here*/){
-    /*add your code here*/
+/
+function dogYears(age){
+   return(age / 7 )
 }
 
 
@@ -107,11 +121,26 @@ Use the hungryDog function and feeding requirements below to do the following:
   NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(/*add your code here*/){
-    /*add your code here*/
+function hungryDog(age,weight) {
+   if (age >= 1) {
+     if (weight > 15) {
+        return (weight * .02)
+      }else if(weight >= 11) {
+        return (weight * .03)
+      }else if (weight >= 6) {
+        return (weight * .04)
+      }else {
+       return (weight * .05)
+      }
+    }else if (age >= 58.333333333333) {
+     return (weight * .04)
+    }else if (age >= 33.333333333333) {
+      return (weight * .05) 
+    }else if (age >= 16.666666666667) {
+      return (weight * .1) 
+    }else {console.log ("Dog is too young for this product")
   }
-
-
+}  
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -133,7 +162,7 @@ Use the game function below to do the following:
 */
 
 function game(user, computer){
-    /*add your code here*/
+    Math.random()
 }
   
   
@@ -149,9 +178,9 @@ Using the miles function below do the following:
   3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-    /*add your code here*/
-  }
+function miles(kilometers){
+  return (kilometers / 1.6093440)
+}
 
 
 
@@ -163,8 +192,8 @@ Using the feet function below do the following:
   3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-    /*add your code here*/
+function feet(centimeters){
+    return (centimeters /  30.48)
   }
  
 
